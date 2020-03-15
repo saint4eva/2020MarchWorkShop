@@ -10,7 +10,7 @@ object EitherEx extends App{
     case e: Exception => Left(in)
   }
 
-  println( result match {
+  println(result match {
     case Right(x) => "You passed me the Int: " + x + ", which I will increment. " + x + " + 1 = " + (x+1)
     case Left(x) => "You passed me the String: " + x
   })
